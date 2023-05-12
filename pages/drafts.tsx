@@ -47,7 +47,7 @@ const Drafts: React.FC<Props> = (props) => {
   }
 
   return (
-    <Layout>
+    <Layout pageTitle="My Drafts">
       <div className="page">
         <h1>My Drafts</h1>
         <main>

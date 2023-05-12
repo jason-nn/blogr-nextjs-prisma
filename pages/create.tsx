@@ -27,7 +27,7 @@ const Draft: React.FC = () => {
   };
 
   return (
-    <Layout>
+    <Layout pageTitle="New Draft">
       <div>
         <form onSubmit={submitData}>
           <h1>New Draft</h1>

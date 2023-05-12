@@ -27,7 +27,7 @@ type Props = {
 
 const Blog: React.FC<Props> = (props) => {
   return (
-    <Layout>
+    <Layout pageTitle="Public Feed">
       <div className="page">
         <h1>Public Feed</h1>
         <main>

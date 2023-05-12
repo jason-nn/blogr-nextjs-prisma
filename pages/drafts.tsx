@@ -39,7 +39,7 @@ const Drafts: React.FC<Props> = (props) => {
 
   if (!session) {
     return (
-      <Layout>
+      <Layout pageTitle="My Drafts">
         <h1>My Drafts</h1>
         <div>You need to be authenticated to view this page.</div>
       </Layout>

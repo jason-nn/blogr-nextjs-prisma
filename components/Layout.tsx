@@ -1,14 +1,19 @@
 import React, { ReactNode } from 'react';
 import Header from './Header';
+import Head from 'next/head';
 
 type Props = {
   children: ReactNode;
+  pageTitle?: string;
 };
 
-const Layout: React.FC<Props> = (props) => (
+const Layout: React.FC<Props> = ({ children, pageTitle }) => (
   <div>
+    <Head>
+      <title>{pageTitle}</title>
+    </Head>
     <Header />
-    <div className="layout">{props.children}</div>
+    <div className="layout">{children}</div>
     <style jsx global>{`
       html {
         box-sizing: border-box;
